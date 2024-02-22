@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    grid-area: header;
+    background-color: #225470;
+    padding: 0.4em 0.7em 0.4em 0.4em;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.headlink{
+    color: white;
+    text-decoration: none;
+}
+.learn {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+aside {
+    grid-area: aside;
+    margin: 0 1em 1em 0.7em;
+    padding: 0.3em 0 auto 1em;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'header header header header'
+        'aside main main main'
+    ;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a div {
+    padding: .75rem 0 .75rem 1.25rem;
+    margin-bottom: 0;
+}
+
+
+.active {
+    color: #fff;
+    background-color: #225470;
+}
+/* Header and aside ends */
+main {
+    grid-area: main;
+    text-align: justify;
+    margin-right: 0.9rem;
+    padding: 0.3rem;
+    background-color: #dbe8f0;
+    border-top: 3px dashed rgb(104, 101, 101);
+}
+.category_header{
+    color: rgb(155, 152, 152);
+    margin: 1rem;
+}
+.box{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid rgb(155, 193, 250);
+    border-radius: 5px;
+}
+.categoryInfo{
+    font-size: 1.2rem;
+    color: rgb(119, 116, 116);
+    padding: 1rem;
+    margin-bottom: 0.7em;
+    background-color: rgb(197, 214, 223);
+    border: 1px solid  rgb(155, 193, 250);
+    border-radius: 5px 5px 0 0;
+}
+.search{
+    padding: 0.8rem;
+}
+.boxtext{
+    font-size: 1rem;
+    color: black;
+}
+input[type=text]{
+    width: 100%;
+    border: 1.5px solid rgb(155, 193, 250);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.7rem 0;
+}
+input[type=text]:focus{
+    outline-color:  rgb(120, 150, 196);
+}
+.radio{
+    font-size: 0.85rem;
+    margin:  0.6rem 0.6rem 0.6rem 1rem;
+}
+input[type=radio]{
+    margin-right: 0.25rem;
+}
+input[type=submit]{
+    font-size: 0.85rem;
+    padding: 0.56em 0.7em;
+    margin-top: 0.7rem;
+    background-color: rgb(91, 192, 222);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+input[type=submit]:hover{
+    background-color: rgb(19, 171, 218);
+    cursor: pointer;
+}
+.categoryErr{
+    font-size: 0.8rem;
+    color: red;
+    padding: 0.5rem;
+    padding-top: 0;
+    margin: 0.5rem;
+    margin-top: 0;
+    background-color: rgba(243, 161, 161, 0);
+}
+
+/* Pop-Up message*/
+.validPopup{
+    width: 331px;
+    background-color: rgb(51, 160, 123);
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: white;
+    box-shadow: 3px 3px 5px 1px black;
+    opacity: 0;
+    animation: example;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+.invalidPopup{
+    margin-top: 15px;
+    width: 342px;
+    background-color: rgb(170, 4, 16);
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: rgb(235, 228, 229);
+    box-shadow: 3px 3px 5px 1px black;
+    opacity: 0;
+    animation: example;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+@keyframes example {
+    0% {opacity: 0;}
+    5% {opacity: 0.6;}
+    10% {opacity: 0.8;}
+    15% {opacity: 1;}
+    20% {opacity: 1;}
+    25% {opacity: 1;}
+    30% {opacity: 1;}
+    35% {opacity: 1;}
+    40% {opacity: 1;}
+    45% {opacity: 1;}
+    50% {opacity: 1;}
+    55% {opacity: 1;}
+    60% {opacity: 1;}
+    65% {opacity: 1;}
+    70% {opacity: 1;}
+    75% {opacity: 1;}
+    80% {opacity: 1;}
+    85% {opacity: 0.8;}
+    90% {opacity: 0.6;}
+    95% {opacity: 0.4;}
+    100% {opacity: 0;}
+}
+
